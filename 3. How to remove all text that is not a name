@@ -1,11 +1,11 @@
-# Removing Non-Name Lines in Notepad++ using Regex
+## Removing Lines that Don't Contain "name" in Notepad++
 
-Follow these steps to remove all lines that do not contain the word `"name"` in Notepad++.
+Here's how to remove lines that do not contain the string `"name"` in Notepad++ using regular expressions:
 
-1. **Open your file** in Notepad++.
-2. **Press `Ctrl + H`** to open the "Find and Replace" dialog box.
-3. Go to the **"Mark"** tab.
-4. Select the checkbox **"Bookmark line"** and choose **"Regular expression"** at the bottom.
+1. Open your file in **Notepad++**
+2. Press `Ctrl + H` to open the **Find and Replace** dialog box.
+3. Go to the **Mark** tab.
+4. Check the box labeled **Bookmark line** and ensure **Regular expression** is selected at the bottom.
 5. In the **Find what** field, enter the following regex pattern:
 
    ```regex
