@@ -9,7 +9,7 @@ def fetch_all_members(api_key):
 
     while True:
         url = f"https://api.congress.gov/v3/member?api_key={api_key}&offset={offset}&limit={limit}&format=json&currentMember=true"
-        # webbrowser.open(url)  # Removed opening the URL in a browser
+      
         
         response = requests.get(url)
         
@@ -19,7 +19,7 @@ def fetch_all_members(api_key):
         
         data = response.json()
         
-        # Check if there are members returned
+  
         if 'members' not in data or not data['members']:
             break
         
