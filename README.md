@@ -1,12 +1,14 @@
-# API-Testing-Congress.gov
+API Testing Congress.gov Members 
 
-Go to:
+1. Go to:
+
 https://api.congress.gov/
+
+2. 
 
 Sign up for an API Key here:
 https://api.congress.gov/sign-up/
 
-I will be testing the /member API
 
 **Parameters for the /member API**
 
