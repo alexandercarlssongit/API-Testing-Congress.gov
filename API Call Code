@@ -1,0 +1,38 @@
+import requests
+import webbrowser
+import json
+
+def fetch_all_members(api_key):
+    all_members = []
+    offset = 0
+    limit = 250  # Adjust limit if necessary based on API documentation
+
+    while True:
+        url = f"https://api.congress.gov/v3/member?api_key={api_key}&offset={offset}&limit={limit}&format=json&currentMember=true"
+        # webbrowser.open(url)  # Removed opening the URL in a browser
+        
+        response = requests.get(url)
+        
+        if response.status_code != 200:
+            print(f"Error: {response.status_code} - {response.text}")
+            break
+        
+        data = response.json()
+        
+        # Check if there are members returned
+        if 'members' not in data or not data['members']:
+            break
+        
+        all_members.extend(data['members'])
+        offset += limit
+
+    return all_members
+
+if __name__ == "__main__":
+    API_KEY = "ENTER-API-KEY-HERE"  # Replace with your actual API key
+    members = fetch_all_members(API_KEY)
+    
+    with open('members.json', 'w') as f:
+        json.dump(members, f, indent=4)
+
+
