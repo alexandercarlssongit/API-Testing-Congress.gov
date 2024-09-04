@@ -1,47 +1,31 @@
-API Testing Congress.gov Members 
+# API Testing Congress.gov Members
 
-1. Go to:
+## Go to:
+[Congress.gov API](https://api.congress.gov/)
 
-https://api.congress.gov/
+Sign up for an API Key here: [Sign Up](https://api.congress.gov/sign-up/)
 
-2. 
+## Parameters for the `/member` API
 
-Sign up for an API Key here:
-https://api.congress.gov/sign-up/
+### `format`, string
+The data format. Value can be `xml` or `json`.
 
+### `offset`, integer
+The starting record returned. `0` is the first record.
 
-**Parameters for the /member API**
+### `limit`, integer
+The number of records returned. The maximum limit is 250.
 
+### `fromDateTime`, string
+The starting timestamp to filter by update date. Use format: `YYYY-MM-DDT00:00:00Z`.
 
-**format, string** 
+### `toDateTime`, string
+The ending timestamp to filter by update date. Use format: `YYYY-MM-DDT00:00:00Z`.
 
-_The data format. Value can be xml or json._
+### `currentMember`, string
+The status of the member. Use `true` or `false`.
 
+---
 
-**offset, integer**
-
-_The starting record returned. 0 is the first record._
-
-
-**limit, integer**
-
-_The number of records returned. The maximum limit is 250._
-
-
-**fromDateTime, string**
-
-_The starting timestamp to filter by update date. Use format: YYYY-MM-DDT00:00:00Z._
-
-** Important ** The time format is Zulu time 
-"Zulu time is generally used as a term for Universal Coordinated Time (UCT), sometimes called Universal Time Coordinated (UTC) or Coordinated Universal Time (but abbreviated UTC). 
- Zulu time was created to eliminate the confusion caused by different time zones."
-
-
-**toDateTime, string**
-
-The ending timestamp to filter by update date. Use format: YYYY-MM-DDT00:00:00Z.
-
-
-**currentMember, string**
-
-currentMember - The status of the member. Use true or false.
+**Important:** The time format is Zulu time.  
+*"Zulu time is generally used as a term for Universal Coordinated Time (UCT), sometimes called Universal Time Coordinated (UTC) or Coordinated Universal Time (but abbreviated UTC). Zulu time was created to eliminate the confusion caused by different time zones."*
