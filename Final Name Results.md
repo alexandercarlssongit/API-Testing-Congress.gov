@@ -1,4 +1,5 @@
-Menendez, Robert,				 
+```markdown
+Menendez, Robert
 Pascrell, Bill
 Booker, Cory A.
 Jackson Lee, Sheila
@@ -95,12 +96,12 @@ Castro, Joaquin
 Weber, Randy K.
 Wittman, Robert J.
 DesJarlais, Scott
-Fleischmann, Charles J. \Chuck\
+Fleischmann, Charles J. 
 Duncan, Jeff
 Cohen, Steve
 Sessions, Pete
 Granger, Kay
-Scott, Robert C. \Bobby\
+Scott, Robert C. 
 Cuellar, Henry
 McCaul, Michael T.
 Green, Al
@@ -296,7 +297,7 @@ Pence, Greg
 Baird, James R.
 Underwood, Lauren
 Casten, Sean
-García, Jesús G. \Chuy\
+García, Jesús G. 
 Fulcher, Russ
 McBath, Lucy
 Estes, Ron
@@ -362,14 +363,14 @@ Gaetz, Matt
 Blunt Rochester, Lisa
 Correa, J. Luis
 Barragán, Nanette Diaz
-Carter, Earl L. \Buddy\
+Carter, Earl L. 
 Frankel, Lois
 Peters, Scott H.
 Vargas, Juan
 Takano, Mark
 Wilson, Frederica S.
 Webster, Daniel
-Johnson, Henry C. \Hank\
+Johnson, Henry C. 
 Buchanan, Vern
 Castor, Kathy
 Bilirakis, Gus M.
@@ -441,7 +442,7 @@ Moore, Barry
 Hill, J. French
 Palmer, Gary J.
 Womack, Steve
-Crawford, Eric A. \Rick\
+Crawford, Eric A. 
 Sewell, Terri A.
 Aderholt, Robert B.
 Rogers, Mike D.
@@ -548,3 +549,5 @@ Santos, George
 Stewart, Chris
 Feinstein, Dianne
 Sasse, Ben
+
+```
