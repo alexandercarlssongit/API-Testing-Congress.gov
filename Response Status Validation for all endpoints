@@ -1,0 +1,41 @@
+
+import os
+
+# List of API endpoints
+endpoints = [
+    "bill",
+    "amendments",
+    "summaries",
+    "congress",
+    "member",
+    "committee",
+    "committee-report",
+    "committee-print",
+    "committee-meeting",
+    "hearing",
+    "congressional-record",
+    "daily-congressional-record",
+    "bound-congressional-record",
+    "house-communication",
+    "house-requirement",
+    "senate-communication",
+    "nomination",
+    "treaty"
+]
+
+# API key placeholder
+api_key = "API-KEY-HERE"
+
+# Base URL
+base_url = "https://api.congress.gov/v3/"
+
+# Function to check status code
+def check_status(endpoint):
+    command = f"curl -o /dev/null -s -w '%{{http_code}}\\n' '{base_url}{endpoint}?api_key={api_key}'"
+    status_code = os.popen(command).read().strip()
+    print(f"Status code for {endpoint}: {status_code}")
+
+# Run checks for all endpoints
+for endpoint in endpoints:
+    check_status(endpoint)
+
