@@ -1,8 +1,8 @@
 ## Oracles:
-https://github.com/LibraryOfCongress/api.congress.gov/tree/main
-https://en.wikipedia.org/wiki/United_States_Congress
-https://www.senate.gov/senators/here
-https://www.senate.gov/senators/
+## https://github.com/LibraryOfCongress/api.congress.gov/tree/main
+## https://en.wikipedia.org/wiki/United_States_Congress
+## https://www.senate.gov/senators/here
+## https://www.senate.gov/senators/
 
 ```
 1. According to Wikipedia "Congress has 535 voting members: 100 senators and 435 representatives."
