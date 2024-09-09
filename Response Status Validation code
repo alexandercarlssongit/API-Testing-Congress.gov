@@ -1,5 +1,5 @@
-
 import os
+from datetime import datetime
 
 # List of API endpoints
 endpoints = [
@@ -29,13 +29,22 @@ api_key = "API-KEY-HERE"
 # Base URL
 base_url = "https://api.congress.gov/v3/"
 
+# Generate a unique log file name with timestamp
+timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+log_file_path = f"/Users/alexandercarlsson/Git/api_status_log_{timestamp}.txt"
+
 # Function to check status code
 def check_status(endpoint):
     command = f"curl -o /dev/null -s -w '%{{http_code}}\\n' '{base_url}{endpoint}?api_key={api_key}'"
     status_code = os.popen(command).read().strip()
+    log_status(endpoint, status_code)
+
+# Function to log status to a file
+def log_status(endpoint, status_code):
+    with open(log_file_path, 'a') as log_file:
+        log_file.write(f"Status code for {endpoint}: {status_code}\n")
     print(f"Status code for {endpoint}: {status_code}")
 
 # Run checks for all endpoints
 for endpoint in endpoints:
     check_status(endpoint)
-
