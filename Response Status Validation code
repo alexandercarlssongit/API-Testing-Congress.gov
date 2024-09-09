@@ -4,7 +4,7 @@ import os
 # List of API endpoints
 endpoints = [
     "bill",
-    "amendments",
+    "amendment",
     "summaries",
     "congress",
     "member",
