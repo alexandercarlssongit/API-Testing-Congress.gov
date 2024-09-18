@@ -1,0 +1,16 @@
+# Define the list of names
+list1 = [
+    "Menendez, Robert",
+    "Pascrell, Bill",
+    # ... (other names)
+    "Sasse, Ben"
+]
+
+# Check for duplicates
+duplicates = set(name for name in list1 if list1.count(name) > 1)
+
+# Print duplicates if any
+if duplicates:
+    print("Duplicate names found:", duplicates)
+else:
+    print("No duplicate names found.")
